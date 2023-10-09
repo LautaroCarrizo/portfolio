@@ -1,7 +1,8 @@
-{
+export const optionsParticles = {
+  "fpsLimit": 120,
   "particles": {
     "number": {
-      "value": 199,
+      "value": 90,
       "density": {
         "enable": true,
         "value_area": 800
@@ -17,7 +18,7 @@
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 20
       },
       "image": {
         "src": "img/github.svg",
@@ -48,17 +49,16 @@
     "line_linked": {
       "enable": true,
       "distance": 157.54233950374157,
-      "color": "#067cfc",
-      "opacity": 0.4,
+      "color": "#99f2c8",
+      "opacity": 0.7,
       "width": 2.0480504135486406
     },
     "move": {
       "enable": true,
       "speed": 6,
-      "direction": "top",
+      "direction": undefined,
       "random": true,
       "straight": true,
-      "out_mode": "out",
       "bounce": false,
       "attract": {
         "enable": false,
@@ -67,8 +67,9 @@
       }
     }
   },
+  
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "canvas" as const,
     "events": {
       "onhover": {
         "enable": true,
@@ -106,5 +107,5 @@
       }
     }
   },
-  "retina_detect": true
-}
+  "detectRetina": true,
+};
