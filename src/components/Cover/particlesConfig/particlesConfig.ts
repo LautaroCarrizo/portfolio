@@ -164,7 +164,7 @@
     },
     "collisions": {
       "absorb": {
-        "speed": 2
+        "speed": 1
       },
       "bounce": {
         "horizontal": {
@@ -197,7 +197,7 @@
           "count": 0,
           "enable": true,
           "offset": 0,
-          "speed": 10,
+          "speed": 5,
           "delay": 0,
           "decay": 0,
           "sync": true
@@ -271,15 +271,15 @@
         "generator": "polygonPathGenerator"
       },
       "outModes": {
-        "default": "destroy",
-        "bottom": "destroy",
-        "left": "destroy",
-        "right": "destroy",
-        "top": "destroy"
+        "default": "out",
+        "bottom": "out",
+        "left": "out",
+        "right": "out",
+        "top": "out"
       },
       "random": false,
       "size": false,
-      "speed": 3,
+      "speed": 1,
       "spin": {
         "acceleration": 0,
         "enable": false
@@ -315,7 +315,7 @@
       "animation": {
         "count": 0,
         "enable": false,
-        "speed": 2,
+        "speed": 1,
         "decay": 0,
         "delay": 0,
         "sync": false,
@@ -410,7 +410,7 @@
         "value": 0
       },
       "mode": "vertical",
-      "speed": 25
+      "speed": 15
     },
     "tilt": {
       "random": {

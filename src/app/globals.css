@@ -3,10 +3,24 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(0, 0, 0);
+         background: linear-gradient(to right, #1a2980, #26d0ce);
+        
+     
 }
 
 .fontStyle {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  letter-spacing: 5px;
+ font-family: 'Handlee', cursive;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+.colorTitle {
+  color: #ffffff; 
+}
+
+.colorTitle2 {
+  color: #040855e0; 
+}
+
+.colorSubTitle {
+  color: #a9c7bdf4; 
 }
