@@ -1,7 +1,7 @@
 import React from "react";
 import { Cover } from "@/components/Cover/Cover";
-import Titles from "@/components/Titles";
-import Welcome from "@/components/WelcomeTitle";
+import Titles from "@/components/Titles/Titles";
+import Welcome from "@/components/Titles/WelcomeTitle";
 import Icons from "@/components/Icons";
 import NavBar from "@/components/Navbar";
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
           <Icons />
         </div>
       </div>
-      <div className="w-full flex justify-center items-end h-30 pb-10">
+      <div className="w-full flex justify-center items-end h-30">
         <NavBar />
       </div>
     </div>

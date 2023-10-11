@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function NavBar() {
   return (
-    <div className="w-1/4 flex justify-between ">
+    <div className="w-1/4 flex justify-between p-6">
       <div className="flex flex-col text-center">
         <Link href="/">
           <Image src="/img/homeDef.png" alt="icono home" width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
@@ -11,17 +11,17 @@ function NavBar() {
       </div>
       <div className="flex flex-col text-center">
         <Link href="/">
-          <Image src="/img/aboutDef2.png" alt="Descripción 2" width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
+          <Image src="/img/aboutDef2.png" alt="icono about" width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
         </Link>
       </div>
       <div className="flex flex-col text-center">
         <Link href="/">
-          <Image src="/img/maletinDef.png" alt="Descripción 3"width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
+          <Image src="/img/maletinDef.png" alt="icono proyectos"width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
         </Link>
       </div>
       <div className="flex flex-col text-center">
         <Link href="/">
-          <Image src="/img/lupaDef.png" alt="Descripción 4" width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
+          <Image src="/img/lupaDef.png" alt="icono contacto" width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
         </Link>
       </div>
     </div>
