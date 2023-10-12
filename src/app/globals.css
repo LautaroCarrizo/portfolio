@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-         background: linear-gradient(to right, #1a2980, #26d0ce);
-        
-     
+.bg-light{
+ background: linear-gradient(to right, #1a2980, #26d0ce);
 }
-
+.bg-dark{
+      background: linear-gradient(to right, #16222a, #3a6073);
+}
 .fontStyle {
  font-family: 'Handlee', cursive;
  font-family: 'Josefin Sans', sans-serif;
@@ -17,14 +17,23 @@ body {
   color: #ffffff; 
 }
 
-.colorTitle2 {
+.titleLight {
   color: #0b043fdb; 
+}
+.titleDark {
+  color: #37c3ca;
 }
 
 .colorSubTitle {
   color: #a9c7bdf4;
 
 }
+.colorSubTitleDark {
+  color: #9ad7f5ea;
+}
 .fullstack {
   color: #ffffff;
+}
+.fullstackDark {
+  color: #04c2b9;
 }
