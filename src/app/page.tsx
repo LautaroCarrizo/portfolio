@@ -41,7 +41,7 @@ function Home() {
     <div className="h-screen w-full bg-light" id="bg-app">
       <Cover />
       <div className="w-full h-30 flex">
-        <div className="pt-5 pl-5 w-9/12">
+        <div className="pt-5 pl-5 w-3/6">
           <button
             onClick={handlerChangeTheme}
             className="bg-transparent text-indigo-300 px-4 py-2 rounded transition-transform transition-filter transform hover:scale-125 hover:text-teal-500"
@@ -57,7 +57,7 @@ function Home() {
             )}
           </button>
         </div>
-        <div className="w-1/4 flex justify-center">
+        <div className="w-3/6 flex justify-end pr-10">
           <button
             className="bg-transparentpt-5 rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900"
             onClick={handleToggleMusic}
