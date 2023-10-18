@@ -4,7 +4,6 @@ import { Cover } from "@/components/Cover/Cover";
 import Titles from "@/components/Titles/Titles";
 import Welcome from "@/components/Titles/WelcomeTitle";
 import Icons from "@/components/Icons";
-import NavBar from "@/components/Navbar";
 import { useState, useEffect } from "react";
 
 function Home() {
@@ -38,9 +37,9 @@ function Home() {
   }, [theme]);
 
   return (
-    <div className="h-screen w-full bg-light" id="bg-app">
+    <div className="bg-light h-full" id="bg-app">
       <Cover />
-      <div className="w-full h-30 flex">
+      <div className="h-30 flex">
         <div className="pt-5 pl-5 w-3/6">
           <button
             onClick={handlerChangeTheme}
@@ -74,7 +73,7 @@ function Home() {
           </audio>
         </div>
       </div>
-      <div className=" flex flex-col h-[88%]">
+      <div className="flex flex-col">
         <div className="flex flex-1">
           <div className="flex-1 flex flex-col justify-center w-2/5">
             <Titles theme={theme} music={musicPlaying} />
@@ -82,12 +81,9 @@ function Home() {
           <div className="w-1/5">
             <Welcome  music={musicPlaying}/>
           </div>
-          <div className="flex justify-center items-end w-2/5">
+          <div className="flex justify-center pt-20 w-2/5">
             <Icons music={musicPlaying} />
           </div>
-        </div>
-        <div className="w-full flex justify-center items-end h-30">
-          <NavBar />
         </div>
       </div>
     </div>

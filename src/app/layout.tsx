@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-
+import NavBar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +24,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </Head>
+      <div className="h-screen w-full flex flex-col">
       {children}
+         <div className="w-full flex bg-nav justify-center items-end h-30">
+          <NavBar />
+        </div>
+      </div>
     </body>
   </html>
 );

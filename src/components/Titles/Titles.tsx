@@ -36,11 +36,13 @@ function Titles({ theme, music }: musicInterface & theme) {
       <h1
         className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle}`}
       >
+        <i>
         {titleLetters.map((letter, index) => (
           <span key={index} className={`${letterDance}`}>
             {letter}
           </span>
         ))}
+        </i>
       </h1>
       <p
         className={`text-3xl ${colorSubtitle} fontStyle tracking-widest font-semibold p-2`}
