@@ -49,7 +49,7 @@ export const optionsParticles = {
     "line_linked": {
       "enable": true,
       "distance": 157.54233950374157,
-      "color": "#99f2c8",
+      "color": "#ffffff",
       "opacity": 0.7,
       "width": 2.0480504135486406
     },

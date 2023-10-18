@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 .bg-light{
- background: linear-gradient(to right, #1a2980, #26d0ce);
+   /*background: linear-gradient(to right, #0f2027, #1b3138, #1c5066);*/
+   background-color: rgb(119, 172, 234);
 }
 .bg-dark{
-      background: linear-gradient(to right, #16222a, #3a6073);
+ background: linear-gradient(to right, #000000, #0b1820, #0b2735);
+ 
 }
 .bg-nav {
-    background-color: #25748e;
+    background-color: rgb(36, 36, 54);
 }
 .fontStyle {
  font-family: 'Handlee', cursive;
@@ -21,21 +23,24 @@
 }
 
 .titleLight {
-  color: #0b043fdb; 
+  color: #103d44df; 
 }
 .titleDark {
   color: #37c3ca;
 }
 
 .colorSubTitle {
-  color: #a9c7bdf4;
+  color: #020202;
 
 }
 .colorSubTitleDark {
   color: #9ad7f5ea;
 }
+.buttomCV{
+  color: #07605b;
+}
 .fullstack {
-  color: #ffffff;
+  color: #0f3a4b;
 }
 .fullstackDark {
   color: #04c2b9;

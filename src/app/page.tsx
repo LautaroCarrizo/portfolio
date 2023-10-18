@@ -43,7 +43,7 @@ function Home() {
         <div className="pt-5 pl-5 w-3/6">
           <button
             onClick={handlerChangeTheme}
-            className="bg-transparent text-indigo-300 px-4 py-2 rounded transition-transform transition-filter transform hover:scale-125 hover:text-teal-500"
+            className="bg-transparent text-white px-4 py-2 rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900"
           >
             {theme === "light" ? (
               <span>
@@ -58,7 +58,7 @@ function Home() {
         </div>
         <div className="w-3/6 flex justify-end pr-10">
           <button
-            className="bg-transparentpt-5 rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900"
+            className="bg-transparentpt-5 text-white rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900"
             onClick={handleToggleMusic}
           >
             {musicPlaying === false ? (

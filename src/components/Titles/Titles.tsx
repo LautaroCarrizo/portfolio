@@ -37,11 +37,11 @@ function Titles({ theme, music }: musicInterface & theme) {
         className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle}`}
       >
         <i>
-        {titleLetters.map((letter, index) => (
-          <span key={index} className={`${letterDance}`}>
-            {letter}
-          </span>
-        ))}
+          {titleLetters.map((letter, index) => (
+            <span key={index} className={`${letterDance}`}>
+              {letter}
+            </span>
+          ))}
         </i>
       </h1>
       <p
@@ -49,16 +49,14 @@ function Titles({ theme, music }: musicInterface & theme) {
       >
         <span ref={type}></span>
       </p>
-      <div className="flex justify-center">
-        <Image
-          src="/img/ubilogo.png"
-          alt="Logo de Ubicacion"
-          width={30}
-          height={30}
-        />
-        <p className="colorSubTitle text-2xl fontStyle tracking-widest font-semibold ml-2 mt-2">
-          Cordóba Argentina
-        </p>
+      <div className="flex justify-center buttomCV p-2 transition-transform transform hover:scale-105">
+        <a
+          href="file:///C:/Users/Usuario/Desktop/Lautaro/Lautaro%20carrizo%20(2).pdf" 
+          target="_blank"
+          className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center"
+        >
+          Abrir CV
+        </a>
       </div>
     </div>
   );

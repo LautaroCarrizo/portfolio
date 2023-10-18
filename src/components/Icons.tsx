@@ -11,7 +11,7 @@ function Icons({music} : musicInterface) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image src="/img/githubDef.svg" alt="GitHub" width={80} height={80} />
+      <Image src="/img/githubPng.png" alt="GitHub" width={80} height={80} />
     </a>
     <a
      className={`w-20 h-40 transition-transform transition-filter transform hover:scale-125 ${danceIcons}`}
@@ -27,7 +27,7 @@ function Icons({music} : musicInterface) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image src="/img/instagram-logo.svg" alt="instagram"width={80} height={80} />
+      <Image src="/img/instagramPng.png" alt="instagram"width={80} height={80} />
     </a>
   </div>
 </div>
