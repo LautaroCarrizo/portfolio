@@ -1,48 +1,69 @@
 "use client";
-
-import React from "react";
-import { useState, useEffect } from "react";
-
+import React, { useState } from "react";
+import Image from "next/image";
 function ProyectsComponent() {
-  const [bgPort, setBgPort] = useState("bg-proyect-1-portfolio");
-  const [bgPI, setBgPI] = useState("bg-proyect-1-PI");
-  const bgPortfolio = ["bg-proyect-2-portfolio", "bg-proyect-3-portfolio"];
-  const bgPIhenry = ["bg-proyect-2-PI", "bg-proyect-3-PI", "bg-proyect-4-PI"];
+  const [isMouseOverPort, setIsMouseOverPort] = useState(false);
+  const [isMouseOverPI, setIsMouseOverPI] = useState(false);
 
-  const changeBackground = (
-    bgList: string[],
-    currentBg: string,
-    setBg: React.Dispatch<React.SetStateAction<string>>
-  ) => {
-    const currentIndex = bgList.indexOf(currentBg);
-    const nextIndex = (currentIndex + 1) % bgList.length;
-    setBg(bgList[nextIndex]);
+  const handleMouseEnterPort = () => {
+    setIsMouseOverPort(true);
   };
 
-  useEffect(() => {
-    const portfolioInterval = setInterval(() => {
-      changeBackground(bgPortfolio, bgPort, setBgPort);
-    }, 2000);
-    const PIInterval = setInterval(() => {
-      changeBackground(bgPIhenry, bgPI, setBgPI);
-    }, 2000);
-    return () => {
-      clearInterval(portfolioInterval);
-      clearInterval(PIInterval);
-    };
-  }, [bgPort, bgPI]);
+  const handleMouseLeavePort = () => {
+    setIsMouseOverPort(false);
+  };
+
+  const handleMouseEnterPI = () => {
+    setIsMouseOverPI(true);
+  };
+
+  const handleMouseLeavePI = () => {
+    setIsMouseOverPI(false);
+  };
 
   return (
     <div className="w-full flex h-4/5">
-      <div className={`w-3/6 h-full ${bgPort} bg-no-repeat bg-cover bg-center`}>
-        <a href="" target="_blank">
-          <div></div>
-        </a>
+      <div
+        id="proyectPort"
+        onMouseEnter={handleMouseEnterPort}
+        onMouseLeave={handleMouseLeavePort}
+        className={`w-3/6 h-full bg-no-repeat bg-cover bg-center transition-all duration-1000 ${
+          isMouseOverPort ? "bg-proyect-2-portfolio" : "bg-proyect-1-portfolio"
+        }`}
+      >
+        {isMouseOverPort && (
+          <div className="w-full h-full flex justify-center items-center">
+            <a className="transform transition-all duration-500 hover:scale-125" href="https://github.com/LautaroCarrizo" target="_blank">
+              <Image
+                src={"/img/githubProyects2.png"}
+                alt="githubLogo"
+                width={80}
+                height={80}
+              />
+            </a>
+          </div>
+        )}
       </div>
-      <div className={`w-3/6 h-full ${bgPI} bg-no-repeat bg-cover bg-center`}>
-        <a href="" target="_blank">
-          <div></div>
-        </a>
+      <div
+        id="proyectPI"
+        onMouseEnter={handleMouseEnterPI}
+        onMouseLeave={handleMouseLeavePI}
+        className={`w-3/6 h-full bg-no-repeat bg-cover bg-center transition-all duration-1000 ${
+          isMouseOverPI ? "bg-proyect-2-PI" : "bg-proyect-1-PI"
+        }`}
+      >
+        {isMouseOverPI && (
+          <div className="w-full h-full flex justify-center items-center">
+            <a className="transform transition-all duration-500 hover:scale-125" href="https://github.com/LautaroCarrizo" target="_blank">
+              <Image
+                src={"/img/githubProyects2.png"}
+                alt="githubLogo"
+                width={80}
+                height={80}
+              />
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
