@@ -3,7 +3,7 @@ import Image from "next/image";
 //@ts-ignore
 import Typed from "typed.js";
 import React from "react";
-import { theme, musicInterface } from "@/interfaces/interface";
+import { theme, musicInterface } from "@/types/interface";
 
 function Titles({ theme, music }: musicInterface & theme) {
   const type = React.useRef(null);

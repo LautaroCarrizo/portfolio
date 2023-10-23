@@ -1,4 +1,4 @@
-import { musicInterface } from "@/interfaces/interface";
+import { musicInterface } from "@/types/interface";
 function Welcome({music}:  musicInterface) {
   const danceTitle = music && "dance";
     const titleText = "Bienvenido";

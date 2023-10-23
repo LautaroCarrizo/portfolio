@@ -15,7 +15,7 @@ function NavBar() {
         </Link>
       </div>
       <div className="flex flex-col text-center">
-        <Link href="/">
+        <Link href="/proyects">
           <Image src="/img/maletinDef.png" alt="icono proyectos"width={50} height={50} className="transition-transform transition-filter transform hover:scale-125"/>
         </Link>
       </div>

@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.fontStyle {
+ font-family: 'Handlee', cursive;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+/*? HOME CLASES */
 .bg-light{
    /*background: linear-gradient(to right, #0f2027, #1b3138, #1c5066);*/
    background-color: rgb(119, 172, 234);
 }
 .bg-dark{
- background: linear-gradient(to right, #000000, #0b1820, #0b2735);
+ background: linear-gradient(to right, #000000, #0b1820, #0e3243);
  
 }
 .bg-nav {
-    background-color: rgb(36, 36, 54);
-}
-.fontStyle {
- font-family: 'Handlee', cursive;
- font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(40, 48, 136);
 }
 
 .colorTitle {
@@ -36,9 +38,7 @@
 .colorSubTitleDark {
   color: #9ad7f5ea;
 }
-.buttomCV{
-  color: #07605b;
-}
+
 .fullstack {
   color: #0f3a4b;
 }
@@ -46,7 +46,7 @@
   color: #04c2b9;
 }
 
-
+/*? ANIMATIONS HOME */
 @keyframes dance {
   0% { transform: translate(0, 0); }
   25% { transform: translate(5px, -5px); }
@@ -98,4 +98,27 @@ padding: 30px 0;
 .logo-slide{
   white-space: nowrap;
   animation: 50s slide infinite linear;
+}
+
+/*? LANDING PROYECTS */
+.bg-proyect-1-portfolio {
+  background-image: url(/img//portfolio.png);
+}
+.bg-proyect-2-portfolio {
+  background-image: url(/img//portfolioDef.png);
+}
+.bg-proyect-3-portfolio {
+  background-image: url(/img//portfolioDef2.png);
+}
+.bg-proyect-1-PI {
+    background-image: url(/img/Linguini.png);
+}
+.bg-proyect-2-PI {
+    background-image: url(/img//pi-1.png);
+}
+.bg-proyect-3-PI {
+    background-image: url(/img/pi-2.png);
+}
+.bg-proyect-4-PI {
+    background-image: url(/img/p1-3.png);
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { musicInterface } from "@/interfaces/interface";
+import { musicInterface } from "@/types/interface";
 function Icons({music} : musicInterface) {
     const danceIcons = music && "dance";
   return (
