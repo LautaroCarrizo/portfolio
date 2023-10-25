@@ -18,7 +18,7 @@ function Contact() {
       <div className="flex justify-around items-center">
         <a
           className={`w-30 h-80 text-center transition-transform transition-filter transform hover:scale-125`}
-          href="mailto:laucarrizo332@gmail.com?subject=Contacto&cc=&bcc=&body=Hola,%20¿en%20qué%20puedo%20ayudarte?"
+          href= "mailto:laucarrizo332@gmail.com?subject=Contacto&body=Hola,%20¿en%20qué%20puedo%20ayudarte?"
           target="_blank"
           rel="noopener noreferrer"
         >

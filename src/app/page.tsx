@@ -79,7 +79,7 @@ function Home() {
             <Titles theme={theme} music={musicPlaying} />
           </div>
           <div className="w-1/5">
-            <Welcome  music={musicPlaying}/>
+            <Welcome music={musicPlaying} />
           </div>
           <div className="flex justify-center pt-20 w-2/5">
             <Icons music={musicPlaying} />
