@@ -4,6 +4,8 @@ import { Cover } from "@/components/Cover/Cover";
 import Titles from "@/components/Titles/Titles";
 import Welcome from "@/components/Titles/WelcomeTitle";
 import Icons from "@/components/Icons";
+import Transition from "@/components/transition";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 function Home() {
@@ -38,6 +40,7 @@ function Home() {
 
   return (
     <div className="bg-light h-full" id="bg-app">
+      <Transition />
       <Cover />
       <div className="h-30 flex">
         <div className="pt-5 pl-5 w-3/6">
@@ -76,13 +79,31 @@ function Home() {
       <div className="flex flex-col">
         <div className="flex flex-1">
           <div className="flex-1 flex flex-col justify-center w-2/5">
-            <Titles theme={theme} music={musicPlaying} />
+            <motion.div
+              initial={{ x: -250 }}
+              animate={{ x: -10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+            >
+              <Titles theme={theme} music={musicPlaying} />
+            </motion.div>
           </div>
           <div className="w-1/5">
-            <Welcome music={musicPlaying} />
+            <motion.div
+              initial={{ y: -250 }}
+              animate={{ y: -10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+            >
+              <Welcome music={musicPlaying} />
+            </motion.div>
           </div>
           <div className="flex justify-center pt-20 w-2/5">
-            <Icons music={musicPlaying} />
+            <motion.div
+              initial={{ x: 250 }}
+              animate={{ x: 10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+            >
+              <Icons music={musicPlaying} />
+            </motion.div>
           </div>
         </div>
       </div>
