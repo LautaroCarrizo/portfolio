@@ -1,5 +1,5 @@
 import InfoAbout from "@/components/AboutComponent";
-import Transition from "../../components/Transition";
+import Transition from "@/components/Transition";
 function About() {
   return (
     <div className="h-screen">
