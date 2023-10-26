@@ -1,5 +1,5 @@
 import ProyectsComponent from "@/components/ProyectsComponent";
-import Transition from "@/components/Transition";
+import Transition from "../../components/Transition";
 
 function Proyects() {
   return (
