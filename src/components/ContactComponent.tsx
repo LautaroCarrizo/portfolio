@@ -28,54 +28,60 @@ function ContactComponent() {
           </i>
         </motion.h3>
       </div>
-      <div className="flex w-full justify-center items-center">
+      <div className="flex w-full justify-center">
         <a
-          className={`w-60 h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
           href="mailto:laucarrizo332@gmail.com?subject=Contacto&body=Hola,%20¿en%20qué%20puedo%20ayudarte?"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <motion.img
-            initial={{ x: -250 }}
-            animate={{ x: -10 }}
-            transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
-            src="/img/gmail.png"
-            alt="GitHub"
-            width={120}
-            height={120}
-          />
+          <div className="flex justify-center">
+            <motion.img
+              initial={{ x: -250 }}
+              animate={{ x: -10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+              src="/img/gmail.png"
+              alt="GitHub"
+              width={160}
+              height={160}
+            />
+          </div>
         </a>
         <a
-          className={`w-60 h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
           href="https://www.linkedin.com/in/lautaro-carrizo-13b7a1217/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <motion.img
-            initial={{ y: -250 }}
-            animate={{ y: -10 }}
-            transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
-            src="/img/linkedin2.svg"
-            alt="LinkedIn"
-            width={120}
-            height={120}
-          />
+          <div className="flex justify-center">
+            <motion.img
+              initial={{ y: -250 }}
+              animate={{ y: -10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+              src="/img/linkedin2.svg"
+              alt="LinkedIn"
+              width={160}
+              height={160}
+            />
+          </div>
         </a>
         <a
-          className={`w-60 h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
           href="https://wa.me/543516512087"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <motion.img
-            initial={{ x: 250 }}
-            animate={{ x: 10 }}
-            transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
-            src="/img/whatsapp.png"
-            alt="instagram"
-            width={120}
-            height={120}
-          />
+          <div className="flex justify-center">
+            <motion.img
+              initial={{ x: 250 }}
+              animate={{ x: 10 }}
+              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+              src="/img/whatsapp.png"
+              alt="instagram"
+              width={160}
+              height={160}
+            />
+          </div>
         </a>
       </div>
     </div>
