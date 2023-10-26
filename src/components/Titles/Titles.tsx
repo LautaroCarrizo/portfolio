@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 //@ts-ignore
 import Typed from "typed.js";
 import React from "react";
@@ -51,7 +51,7 @@ function Titles({ theme, music }: musicInterface & theme) {
       </p>
       <div className="flex justify-center buttomCV p-2 transition-transform transform hover:scale-105">
         <a
-          href="file:///C:/Users/Usuario/Desktop/Lautaro/Lautaro%20carrizo%20(2).pdf" 
+          href="file:///C:/Users/Usuario/Desktop/Lautaro/Lautaro%20carrizo%20(2).pdf"
           target="_blank"
           className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center"
         >
