@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
+import { TechnologiesPortfolio, TechnologiesPI } from "./Technologies";
 function ProyectsComponent() {
   const [isMouseOverPort, setIsMouseOverPort] = useState(false);
   const [isMouseOverPI, setIsMouseOverPI] = useState(false);
@@ -33,8 +33,12 @@ function ProyectsComponent() {
         }`}
       >
         {isMouseOverPort && (
-          <div className="w-full h-full flex justify-center items-center">
-            <a className="transform transition-all duration-500 hover:scale-125" href="https://github.com/LautaroCarrizo" target="_blank">
+          <div className="w-full h-full flex flex-col justify-center items-center">
+            <a
+              className="transform transition-all duration-500 hover:scale-125"
+              href="https://github.com/LautaroCarrizo"
+              target="_blank"
+            >
               <Image
                 src={"/img/githubProyects2.png"}
                 alt="githubLogo"
@@ -42,6 +46,7 @@ function ProyectsComponent() {
                 height={80}
               />
             </a>
+          <TechnologiesPortfolio/>
           </div>
         )}
       </div>
@@ -54,8 +59,12 @@ function ProyectsComponent() {
         }`}
       >
         {isMouseOverPI && (
-          <div className="w-full h-full flex justify-center items-center">
-            <a className="transform transition-all duration-500 hover:scale-125" href="https://github.com/LautaroCarrizo" target="_blank">
+          <div className="w-full h-full flex flex-col justify-center items-center">
+            <a
+              className="transform transition-all duration-500 hover:scale-125"
+              href="https://github.com/LautaroCarrizo"
+              target="_blank"
+            >
               <Image
                 src={"/img/githubProyects2.png"}
                 alt="githubLogo"
@@ -63,6 +72,7 @@ function ProyectsComponent() {
                 height={80}
               />
             </a>
+            <TechnologiesPI/>
           </div>
         )}
       </div>
