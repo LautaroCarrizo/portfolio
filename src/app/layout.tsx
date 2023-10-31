@@ -28,7 +28,7 @@ export default function RootLayout({
       <div className="h-screen w-full flex flex-col">
         <Transition/>
       {children}
-         <div className="w-full flex bg-nav justify-center h-30">
+         <div className="w-full flex bg-nav justify-center">
           <NavBar />
         </div>
       </div>

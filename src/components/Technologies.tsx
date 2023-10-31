@@ -3,7 +3,7 @@ export function TechnologiesPortfolio() {
     <div className="flex pt-10">
       <svg
         stroke="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2"
         fill="white"
         stroke-width="0"
         role="img"
@@ -17,7 +17,7 @@ export function TechnologiesPortfolio() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -30,7 +30,7 @@ export function TechnologiesPortfolio() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -43,7 +43,7 @@ export function TechnologiesPortfolio() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ export function TechnologiesPortfolio() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -72,11 +72,11 @@ export function TechnologiesPortfolio() {
 
 export function TechnologiesPI() {
   return (
-    <div className="flex pt-10">
+    <div className="flex pt-10 max-md:flex-col max-md:pt-0 max-sm:flex-row">
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -89,7 +89,7 @@ export function TechnologiesPI() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export function TechnologiesPI() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -114,8 +114,8 @@ export function TechnologiesPI() {
       </svg>
       <svg
         stroke="white"
-        fill="white"
-        className="mx-4"
+        fill="white" 
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -128,7 +128,7 @@ export function TechnologiesPI() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -141,7 +141,7 @@ export function TechnologiesPI() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"
@@ -154,7 +154,7 @@ export function TechnologiesPI() {
       <svg
         stroke="white"
         fill="white"
-        className="mx-4"
+        className="mx-4 max-lg:mx-2 max-md:m-2"
         stroke-width="0"
         role="img"
         viewBox="0 0 24 24"

@@ -13,7 +13,7 @@ function InfoAbout() {
           </div>
         )}
 
-        <div className="w-3/6 max-lg:w-full max-lg:p-5">
+        <div className="w-3/6 max-lg:w-full max-lg:p-4">
           <div className="flex justify-center flex-col h-full">
             <motion.div
               initial={{ y: -250 }}
