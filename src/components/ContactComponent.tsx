@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 function ContactComponent() {
   return (
     <div className="h-full flex flex-col justify-between bg-light">
-      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center">
+      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center max-md:p-5">
         <motion.h1
-          className="text-7xl fontStyle pt-5 tracking-widest font-bold pb-4"
+          className="text-7xl fontStyle pt-5 tracking-widest font-bold pb-4 max-lg:text-6xl max-md:text-5xl max-lg:pt-10 max-md:pb-2"
           initial={{ y: -250 }}
           animate={{ y: -10 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
@@ -15,7 +15,7 @@ function ContactComponent() {
         </motion.h1>
         <motion.h3
           initial={{ y: -250 }}
-          className="fontStyle tracking-wider font-semibold text-2xl"
+          className="fontStyle tracking-wider font-semibold text-2xl max-lg:text-[18px] max-md:text-[15px]"
           animate={{ y: -10 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
         >
@@ -28,9 +28,9 @@ function ContactComponent() {
           </i>
         </motion.h3>
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center max-md:flex-col max-md:items-center">
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
           href="mailto:laucarrizo332@gmail.com?subject=Contacto&body=Hola,%20¿en%20qué%20puedo%20ayudarte?"
           target="_blank"
           rel="noopener noreferrer"
@@ -39,16 +39,15 @@ function ContactComponent() {
             <motion.img
               initial={{ x: -250 }}
               animate={{ x: -10 }}
+              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/gmail.png"
               alt="GitHub"
-              width={160}
-              height={160}
             />
           </div>
         </a>
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
           href="https://www.linkedin.com/in/lautaro-carrizo-13b7a1217/"
           target="_blank"
           rel="noopener noreferrer"
@@ -57,16 +56,15 @@ function ContactComponent() {
             <motion.img
               initial={{ y: -250 }}
               animate={{ y: -10 }}
+              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/linkedin2.svg"
               alt="LinkedIn"
-              width={160}
-              height={160}
             />
           </div>
         </a>
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
           href="https://wa.me/543516512087"
           target="_blank"
           rel="noopener noreferrer"
@@ -75,11 +73,10 @@ function ContactComponent() {
             <motion.img
               initial={{ x: 250 }}
               animate={{ x: 10 }}
+              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/whatsapp.png"
               alt="instagram"
-              width={160}
-              height={160}
             />
           </div>
         </a>
