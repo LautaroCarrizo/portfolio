@@ -1,21 +1,26 @@
 "use client";
 import Skills from "@/components/Skills";
 import { motion } from "framer-motion";
+import { useWidth } from "@/utils/hookWidth";
 function InfoAbout() {
+  const width = useWidth();
   return (
     <div className="h-full bg-black">
       <div className="flex w-full h-auto text-white">
-        <div className="w-1/4">
-          <img src="/img/gifDef5.gif" alt="gif" className="w-full h-full"></img>
-        </div>
-        <div className="w-3/6">
-          <div className="flex justify-center flex-col  h-full">
+        {!(width < 1024) && (
+          <div className="w-1/4">
+            <img src="/img/gifDef5.gif" alt="gif" className="w-full h-full" />
+          </div>
+        )}
+
+        <div className="w-3/6 max-lg:w-full">
+          <div className="flex justify-center flex-col  max-lg:p-4 h-full">
             <motion.div
               initial={{ y: -250 }}
               animate={{ y: -10 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
-              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle">
+              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle max-xl:text-5xl">
                 SOBRE Mí
               </h1>
             </motion.div>
@@ -25,7 +30,7 @@ function InfoAbout() {
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
               <div className="pt-5">
-                <p className="fontStyle text-center leading-8">
+                <p className="fontStyle text-center leading-8 max-xl:leading-6 max-sm:text-[12px] max-sm:leading-6">
                   Soy desarrollador full stack y técnico en recursos humanos,
                   residiendo en Córdoba, Argentina.
                   <br />
@@ -50,9 +55,11 @@ function InfoAbout() {
             </motion.div>
           </div>
         </div>
-        <div className="w-1/4">
-          <img src="/img/gifDef2.gif" alt="gif" className="w-full h-full"></img>
-        </div>
+        {!(width < 1024) && (
+          <div className="w-1/4">
+            <img src="/img/gifDef2.gif" alt="gif" className="w-full h-full" />
+          </div>
+        )}
       </div>
       <Skills />
     </div>

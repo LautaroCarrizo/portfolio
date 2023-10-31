@@ -8,7 +8,7 @@ function Skills() {
         animate={{ y: -10 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
       >
-        <h1 className="text-white text-4xl fontStyle w-4/6 flex justify-center">
+        <h1 className="text-white text-4xl fontStyle w-4/6 flex justify-center max-xl:pt-5">
           <i>Skills</i>
         </h1>
       </motion.div>
