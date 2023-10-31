@@ -46,14 +46,14 @@ function Home() {
         <div className="pt-5 pl-5 w-3/6">
           <button
             onClick={handlerChangeTheme}
-            className="bg-transparent text-white px-4 py-2 rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900"
+            className="bg-transparent text-white px-4 py-2 rounded transition-transform transition-filter transform hover:scale-125 hover:text-indigo-900  "
           >
             {theme === "light" ? (
-              <span>
+              <span className="max-sm:text-[10px]">
                 Dark Mode. <br /> ⋆⁺₊⋆ ☾ ⋆⁺₊⋆
               </span>
             ) : (
-              <span>
+              <span className="max-sm:text-[10px]">
                 Light Mode. <br /> ⋆⁺₊⋆ ☀ ⋆⁺₊⋆
               </span>
             )}
@@ -65,9 +65,9 @@ function Home() {
             onClick={handleToggleMusic}
           >
             {musicPlaying === false ? (
-              <span>Music On. 🎧</span>
+              <span className="max-sm:text-[10px]">Music On. 🎧</span>
             ) : (
-              <span>Music Off. 🎤</span>
+              <span className="max-sm:text-[10px]">Music Off. 🎤</span>
             )}
           </button>
           <audio id="audio-element">
@@ -76,9 +76,17 @@ function Home() {
           </audio>
         </div>
       </div>
-      <div className="flex flex-col">
-        <div className="flex flex-1">
-          <div className="flex-1 flex flex-col justify-center w-2/5">
+      <div className="w-full flex justify-center items-center h-auto  max-sm:pt-5">
+        <motion.div
+          initial={{ y: -250 }}
+          animate={{ y: -10 }}
+          transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
+        >
+          <Welcome music={musicPlaying} />
+        </motion.div>
+      </div>
+        <div className="flex flex-1 max-sm:flex-col">
+          <div className="flex flex-col justify-center w-4/5 max-sm:w-full">
             <motion.div
               initial={{ x: -250 }}
               animate={{ x: -10 }}
@@ -87,16 +95,7 @@ function Home() {
               <Titles theme={theme} music={musicPlaying} />
             </motion.div>
           </div>
-          <div className="w-1/5">
-            <motion.div
-              initial={{ y: -250 }}
-              animate={{ y: -10 }}
-              transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
-            >
-              <Welcome music={musicPlaying} />
-            </motion.div>
-          </div>
-          <div className="flex justify-center pt-20 w-2/5">
+          <div className="flex justify-center w-4/5 max-sm:mt-2  max-sm:w-full ">
             <motion.div
               initial={{ x: 250 }}
               animate={{ x: 10 }}
@@ -106,7 +105,6 @@ function Home() {
             </motion.div>
           </div>
         </div>
-      </div>
     </div>
   );
 }

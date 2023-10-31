@@ -13,9 +13,7 @@ function Titles({ theme, music }: musicInterface & theme) {
   const colorSubtitle =
     theme === "dark" ? "colorSubTitleDark " : "colorSubTitle";
   const danceTitle = music && "dance";
-  const titleText = "Saludos! soy Lautaro,";
-  const titleLetters = titleText.split("");
-  const letterDance = music && "letter-animation";
+
   React.useEffect(() => {
     const typed = new Typed(type.current, {
       strings: [
@@ -32,28 +30,23 @@ function Titles({ theme, music }: musicInterface & theme) {
   }, [fullstackColor]);
 
   return (
-    <div className="w-full relative text-center p-10 flex flex-col ">
+    <div className="w-full text-center p-10 flex flex-col  max-sm:p-1 ">
       <h1
-        className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle}`}
+        className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle} max-lg:text-5xl max-sm:text-3xl`}
       >
-        <i>
-          {titleLetters.map((letter, index) => (
-            <span key={index} className={`${letterDance}`}>
-              {letter}
-            </span>
-          ))}
-        </i>
+        <i>Saludos! soy Lautaro,</i>
       </h1>
-      <p
-        className={`text-3xl ${colorSubtitle} fontStyle tracking-widest font-semibold p-2`}
-      >
-        <span ref={type}></span>
+      <p>
+        <span
+          className={`text-3xl max-lg:text-2xl  max-sm:text-[15px]  max-sm:p-3  ${colorSubtitle} fontStyle tracking-widest font-semibold p-2`}
+          ref={type}
+        ></span>
       </p>
       <div className="flex justify-center buttomCV p-2 transition-transform transform hover:scale-105">
         <a
           href="file:///C:/Users/Usuario/Desktop/Lautaro/Lautaro%20carrizo%20(2).pdf"
           target="_blank"
-          className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center"
+          className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center max-sm:mt-5"
         >
           Abrir CV
         </a>
