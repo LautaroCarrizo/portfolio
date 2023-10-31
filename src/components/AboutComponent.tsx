@@ -13,8 +13,8 @@ function InfoAbout() {
           </div>
         )}
 
-        <div className="w-3/6 max-lg:w-full">
-          <div className="flex justify-center flex-col  max-lg:p-4 h-full">
+        <div className="w-3/6 max-lg:w-full max-lg:p-5">
+          <div className="flex justify-center flex-col h-full">
             <motion.div
               initial={{ y: -250 }}
               animate={{ y: -10 }}
@@ -61,7 +61,9 @@ function InfoAbout() {
           </div>
         )}
       </div>
-      <Skills />
+      <div className="max-sm:flex max-sm:items-end max-sm:h-[30vh]">
+        <Skills />
+      </div>
     </div>
   );
 }
