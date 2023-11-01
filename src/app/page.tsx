@@ -95,7 +95,7 @@ function Home() {
               <Titles theme={theme} music={musicPlaying} />
             </motion.div>
           </div>
-          <div className="flex justify-center w-4/5 max-sm:mt-2  max-sm:w-full ">
+          <div className="flex justify-center w-4/5 max-sm:mt-2  max-sm:w-full">
             <motion.div
               initial={{ x: 250 }}
               animate={{ x: 10 }}
