@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import NavBar from "@/components/Navbar";
-import Transition from "../components/Transition";
+import {TransitionComponent} from "../components/Transition";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
         />
       </Head>
       <div className="h-screen w-full flex flex-col">
-        <Transition/>
+        <TransitionComponent/>
       {children}
          <div className="w-full flex bg-nav justify-center">
           <NavBar />

@@ -1,10 +1,10 @@
 import ProyectsComponent from "@/components/ProyectsComponent";
-import Transition from "@/components/Transition";
+import {TransitionComponent} from "@/components/Transition";
 
 function Proyects() {
   return (
     <div className="bg-black">
-      <Transition/>
+      <TransitionComponent/>
       <div className="w-full h-[25vh] relative">
         <video
           autoPlay
