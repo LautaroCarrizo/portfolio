@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { transitionVariantsPage } from "@/utils/motionTransition";
-function Transition() {
+function TransitionComponent() {
   return (
     <>
       <AnimatePresence mode="wait">
@@ -27,4 +27,4 @@ function Transition() {
     </>
   );
 }
-export default Transition
+export default TransitionComponent
