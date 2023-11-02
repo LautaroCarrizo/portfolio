@@ -4,7 +4,7 @@ import { Cover } from "@/components/Cover/Cover";
 import Titles from "@/components/Titles/Titles";
 import Welcome from "@/components/Titles/WelcomeTitle";
 import Icons from "@/components/Icons";
-import {TransitionComponent} from "../components/Transition";
+import {TransitionComponent} from "@/components/Transition";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
