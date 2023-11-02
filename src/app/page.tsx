@@ -4,7 +4,7 @@ import { Cover } from "@/components/Cover/Cover";
 import Titles from "@/components/Titles/Titles";
 import Welcome from "@/components/Titles/WelcomeTitle";
 import Icons from "@/components/Icons";
-import {TransitionComponent} from "@/components/Transition";
+//import {TransitionComponent} from "@/components/Transition";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -40,8 +40,8 @@ function Home() {
 
   return (
     <div className="bg-light h-full" id="bg-app">
-      <TransitionComponent />
       <Cover />
+
       <div className="h-30 flex">
         <div className="pt-5 pl-5 w-3/6">
           <button
