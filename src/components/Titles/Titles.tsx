@@ -32,7 +32,7 @@ function Titles({ theme, music }: musicInterface & theme) {
   return (
     <div className="w-full text-center p-10 flex flex-col  max-sm:p-1 ">
       <h1
-        className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle} max-lg:text-5xl max-sm:text-3xl`}
+        className={`titleLight text-7xl fontStyle tracking-widest font-semibold mb-2 ${titleColor} ${danceTitle} max-lg:text-5xl max-sm:text-3xl max-sm:pl-2`}
       >
         <i>Saludos! soy Lautaro,</i>
       </h1>
