@@ -20,7 +20,7 @@ function InfoAbout() {
               animate={{ y: -10 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
-              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle max-xl:text-5xl">
+              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle max-xl:text-5xl max-sm:text-4xl max-sm:pt-3">
                 SOBRE Mí
               </h1>
             </motion.div>
@@ -29,8 +29,8 @@ function InfoAbout() {
               animate={{ y: -10 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
-              <div className="pt-5">
-                <p className="fontStyle text-center leading-8 max-xl:leading-6 max-sm:text-[12px] max-sm:leading-6">
+              <div className="pt-5 max-sm:pt-2">
+                <p className="fontStyle text-center leading-8 max-xl:leading-6 max-sm:text-[12px] max-sm:leading-5">
                   Soy desarrollador full stack y técnico en recursos humanos,
                   residiendo en Córdoba, Argentina.
                   <br />

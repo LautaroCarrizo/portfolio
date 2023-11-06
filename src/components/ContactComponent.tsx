@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 function ContactComponent() {
   return (
     <div className="h-full flex flex-col justify-between bg-light">
-      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center max-md:p-5">
+      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center max-md:p-5 max-sm:p-2">
         <motion.h1
-          className="text-7xl fontStyle pt-5 tracking-widest font-bold pb-4 max-lg:text-6xl max-md:text-5xl max-lg:pt-10 max-md:pb-2"
+          className="text-7xl fontStyle pt-5 tracking-widest font-bold pb-4 max-lg:text-6xl max-md:text-5xl max-lg:pt-10 max-md:pb-2 max-sm:tracking-normal"
           initial={{ y: -250 }}
           animate={{ y: -10 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
@@ -15,7 +15,7 @@ function ContactComponent() {
         </motion.h1>
         <motion.h3
           initial={{ y: -250 }}
-          className="fontStyle tracking-wider font-semibold text-2xl max-lg:text-[18px] max-md:text-[15px]"
+          className="fontStyle tracking-wider font-semibold text-2xl max-lg:text-[18px] max-md:text-[15px] max-sm:text-[12px] max-sm:tracking-normal"
           animate={{ y: -10 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
         >
@@ -35,11 +35,11 @@ function ContactComponent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex justify-center">
+          <div className="flex justify-center max-sm:pl-4">
             <motion.img
               initial={{ x: -250 }}
               animate={{ x: -10 }}
-              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
+              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px] max-sm:h-[80px] max-sm:w-[80px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/gmail.png"
               alt="GitHub"
@@ -56,7 +56,7 @@ function ContactComponent() {
             <motion.img
               initial={{ y: -250 }}
               animate={{ y: -10 }}
-              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
+              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px] max-sm:h-[80px] max-sm:w-[80px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/linkedin2.svg"
               alt="LinkedIn"
@@ -69,11 +69,11 @@ function ContactComponent() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="flex justify-center">
+          <div className="flex justify-center max-sm:pr-4">
             <motion.img
               initial={{ x: 250 }}
               animate={{ x: 10 }}
-              className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px]"
+               className="w-[160px] h-[160px] max-lg:w-[120px] max-lg:h-[120px] max-md:w-[100px] max-md:h-[100px] max-sm:h-[80px] max-sm:w-[80px]"
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
               src="/img/whatsapp.png"
               alt="instagram"
