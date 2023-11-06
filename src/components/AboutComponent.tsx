@@ -20,7 +20,7 @@ function InfoAbout() {
               animate={{ y: -10 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
-              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle max-xl:text-5xl max-sm:text-4xl max-sm:pt-3">
+              <h1 className="text-start text-7xl tracking-wider pt-5 tefontStyle max-xl:text-5xl max-sm:text-5xl max-sm:pt-3">
                 SOBRE Mí
               </h1>
             </motion.div>

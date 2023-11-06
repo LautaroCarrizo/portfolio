@@ -5,7 +5,7 @@ function Skills() {
   const width = useWidth();
   const sliderDevices = width < 700 ? "logo-slideMobile" : "logo-slide";
   return (
-    <div className="h-auto">
+    <div className="h-auto max-sm:pb-5">
       <motion.div
         initial={{ y: -250 }}
         animate={{ y: -10 }}
@@ -21,7 +21,7 @@ function Skills() {
             <Image
               src={"/img/js3.png"}
               alt="skills"
-              className="mx-5 rounded-[50%] max-sm:mx-1"
+              className="mx-5 rounded-[50%] max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -29,7 +29,7 @@ function Skills() {
             <Image
               src={"/img/ts3.png"}
               alt="skills"
-              className="mx-5  max-sm:mx-1"
+              className="mx-5  max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -37,7 +37,7 @@ function Skills() {
             <Image
               src={"/img/node2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -45,7 +45,7 @@ function Skills() {
             <Image
               src={"/img/sequalize.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -53,7 +53,7 @@ function Skills() {
             <Image
               src={"/img/express-js.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -61,7 +61,7 @@ function Skills() {
             <Image
               src={"/img/react2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -69,7 +69,7 @@ function Skills() {
             <Image
               src={"/img/redux.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -77,7 +77,7 @@ function Skills() {
             <Image
               src={"/img/postgres2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -85,7 +85,7 @@ function Skills() {
             <Image
               src={"/img/next5.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -93,7 +93,7 @@ function Skills() {
             <Image
               src={"/img/tailwind3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -101,7 +101,7 @@ function Skills() {
             <Image
               src={"/img/html3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -109,7 +109,7 @@ function Skills() {
             <Image
               src={"/img/css.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -117,7 +117,7 @@ function Skills() {
             <Image
               src={"/img/git3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -125,15 +125,15 @@ function Skills() {
             <Image
               src={"/img/boostrap.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
             ></Image>
-            <Image
+              <Image
               src={"/img/js3.png"}
               alt="skills"
-              className="mx-5 rounded-[50%] max-sm:mx-1"
+              className="mx-5 rounded-[50%] max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -141,7 +141,7 @@ function Skills() {
             <Image
               src={"/img/ts3.png"}
               alt="skills"
-              className="mx-5  max-sm:mx-1"
+              className="mx-5  max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -149,7 +149,7 @@ function Skills() {
             <Image
               src={"/img/node2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -157,7 +157,7 @@ function Skills() {
             <Image
               src={"/img/sequalize.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -165,7 +165,7 @@ function Skills() {
             <Image
               src={"/img/express-js.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -173,7 +173,7 @@ function Skills() {
             <Image
               src={"/img/react2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -181,7 +181,7 @@ function Skills() {
             <Image
               src={"/img/redux.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -189,7 +189,7 @@ function Skills() {
             <Image
               src={"/img/postgres2.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -197,7 +197,7 @@ function Skills() {
             <Image
               src={"/img/next5.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -205,7 +205,7 @@ function Skills() {
             <Image
               src={"/img/tailwind3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -213,7 +213,7 @@ function Skills() {
             <Image
               src={"/img/html3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -221,7 +221,7 @@ function Skills() {
             <Image
               src={"/img/css.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -229,7 +229,7 @@ function Skills() {
             <Image
               src={"/img/git3.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
@@ -237,7 +237,7 @@ function Skills() {
             <Image
               src={"/img/boostrap.png"}
               alt="skills"
-              className="mx-5 max-sm:mx-1"
+              className="mx-5 max-sm:mx-1 max-sm:w-[45px] max-sm:h-[45px] max-md:w-[55px] max-md:h-[55px]"
               width={90}
               height={60}
               loading="lazy"
