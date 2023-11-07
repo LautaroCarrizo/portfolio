@@ -48,7 +48,7 @@ function Titles({ theme, music }: musicInterface & theme) {
           download="Lautaro_carrizo.pdf"
           className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center max-sm:mt-5"
         >
-          Abrir CV
+          Descargar CV
         </a>
       </div>
     </div>
