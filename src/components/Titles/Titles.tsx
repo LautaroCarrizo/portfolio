@@ -44,8 +44,8 @@ function Titles({ theme, music }: musicInterface & theme) {
       </p>
       <div className="flex justify-center buttomCV p-2 transition-transform transform hover:scale-105">
         <a
-          href="file:///C:/Users/Usuario/Desktop/Lautaro/Lautaro%20carrizo%20(2).pdf"
-          target="_blank"
+          href="https://drive.google.com/file/d/1Pxkx_7aQ6eIOmAKR4oWwJGjWI7KhcC78/view?usp=sharing"
+          download="Lautaro_carrizo.pdf"
           className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center max-sm:mt-5"
         >
           Abrir CV
