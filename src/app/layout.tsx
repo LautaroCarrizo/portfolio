@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Head>
+         <link rel="icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Sans:ital,wght@1,300&display=swap"
             rel="stylesheet"
