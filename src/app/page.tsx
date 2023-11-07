@@ -101,7 +101,7 @@ function Home() {
               animate={{ x: 10 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 80 }}
             >
-              <Icons music={musicPlaying} />
+              <Icons music={musicPlaying} theme={theme}/>
             </motion.div>
           </div>
         </div>

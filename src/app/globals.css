@@ -84,15 +84,16 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-235%);
+    transform: translateX(-100%);
   }
 }
+
 @keyframes slideMobile {
   0% {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-565%);
+    transform: translateX(-200%);
   }
 }
 
@@ -109,7 +110,7 @@
 
 .logo-skills {
 overflow: hidden;
-padding: 30px 0;
+padding: 15px;
 }
 
 /*? LANDING PROYECTS */
