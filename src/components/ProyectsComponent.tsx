@@ -43,7 +43,7 @@ function ProyectsComponent() {
                 src={"/img/githubProyects2.png"}
                 alt="githubLogo"
                 width={80}
-                height={80}
+                height={70}
               />
             </a>
           <TechnologiesPortfolio/>

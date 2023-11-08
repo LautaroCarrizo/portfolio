@@ -5,7 +5,7 @@ function Proyects() {
   return (
     <div className="bg-black">
     <TransitionComponent/>
-      <div className="w-full h-[25vh] relative">
+      <div className="w-full h-[21.8vh] relative">
         <video
           autoPlay
           loop
