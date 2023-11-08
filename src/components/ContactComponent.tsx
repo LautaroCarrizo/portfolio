@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function ContactComponent() {
   return (
     <div className="h-full flex flex-col justify-between bg-light">
-      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center max-md:p-5 max-sm:p-2">
+      <div className="w-full p-10 h-1/3 flex flex-col text-center titleLight justify-center max-md:p-5 max-sm:p-0">
         <motion.h1
           className="text-7xl fontStyle pt-5 tracking-widest font-bold pb-4 max-lg:text-6xl max-md:text-5xl max-lg:pt-10 max-md:pb-2 max-sm:tracking-normal"
           initial={{ y: -250 }}
@@ -30,7 +30,7 @@ function ContactComponent() {
       </div>
       <div className="flex w-full justify-center max-md:flex-col max-md:items-center">
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[20vw] max-md:h-[20vh]`}
           href="mailto:laucarrizo332@gmail.com?subject=Contacto&body=Hola,%20¿en%20qué%20puedo%20ayudarte?"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,7 +47,7 @@ function ContactComponent() {
           </div>
         </a>
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[20vw] max-md:h-[20vh]`}
           href="https://www.linkedin.com/in/lautaro-carrizo-13b7a1217/"
           target="_blank"
           rel="noopener noreferrer"
@@ -64,7 +64,7 @@ function ContactComponent() {
           </div>
         </a>
         <a
-          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[30vw] max-md:h-[20vh]`}
+          className={`w-[20rem] h-80 transition-transform transition-filter transform hover:scale-125 max-lg:w-[20vw] max-lg:h-[40vh] max-md:w-[20vw] max-md:h-[20vh]`}
           href="https://wa.me/543516512087"
           target="_blank"
           rel="noopener noreferrer"

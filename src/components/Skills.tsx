@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import { useWidth } from "@/utils/hookWidth";
+
 function Skills() {
-  const width = useWidth();
-  const sliderDevices = width < 700 ? "logo-slideMobile" : "logo-slide";
   return (
-    <div className="h-auto">
+    <div>
       <motion.div
         initial={{ y: -250 }}
         animate={{ y: -10 }}
@@ -16,12 +14,12 @@ function Skills() {
       </motion.div>
 
       <div className="logo-skills">
-        <div className={`flex w-full justify-around ${sliderDevices}`}>
+        <div className={`flex w-full justify-around logo-slide p-3`}>
           <svg
             stroke="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             fill="white"
             stroke-width="0"
             role="img"
@@ -34,8 +32,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -47,8 +45,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +57,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -72,8 +70,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -85,8 +83,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -98,8 +96,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -111,8 +109,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -124,8 +122,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -137,8 +135,8 @@ function Skills() {
             stroke="white"
             fill="white"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
             stroke-width="0"
             role="img"
             viewBox="0 0 24 24"
@@ -151,8 +149,8 @@ function Skills() {
             xmlns="http://www.w3.org/2000/svg"
             fill="#000000"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
@@ -172,8 +170,8 @@ function Skills() {
             fill="#000000"
             xmlns="http://www.w3.org/2000/svg"
             className="max-lg:mr-3"
-            width="100px"
-            height="80px"
+            width="130px"
+            height="100px"
           >
             <g id="SVGRepo_iconCarrier">
               <g>

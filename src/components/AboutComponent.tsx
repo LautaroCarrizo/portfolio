@@ -61,7 +61,7 @@ function InfoAbout() {
           </div>
         )}
       </div>
-      <div className="max-sm:flex max-sm:items-end max-sm:h-[30vh]">
+      <div className="items-end h-auto">
         <Skills />
       </div>
     </div>

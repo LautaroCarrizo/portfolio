@@ -88,14 +88,6 @@
   }
 }
 
-@keyframes slideMobile {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-}
 
 .logo-slide {
   white-space: nowrap;
@@ -110,7 +102,6 @@
 
 .logo-skills {
 overflow: hidden;
-padding: 15px;
 }
 
 /*? LANDING PROYECTS */
