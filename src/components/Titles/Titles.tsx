@@ -44,7 +44,7 @@ function Titles({ theme, music }: musicInterface & theme) {
       </p>
       <div className="flex justify-center buttomCV p-2 transition-transform transform hover:scale-105">
         <a
-          href="https://drive.google.com/file/d/1Sl_Qu9GmEZJYCSZ6-88OCP7uAs48XlEg/view?usp=sharing"
+          href="https://docs.google.com/document/d/1y7XXINhDhYgy03b3ftvCecIDNDi9ZCTfXk04p8Hia1U/edit?usp=sharing"
           download="Lautaro_carrizo.pdf"
           target="_blank"
           className="p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-300 block text-center max-sm:mt-5"
